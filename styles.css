@@ -1,0 +1,30 @@
+* {
+  border: 1px solid black;
+}
+
+body {
+  position: absolute;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  height: 100%;
+}
+
+.header {
+  height: 40px;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.footer {
+  height: 40px;
+}

@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: Roboto, sans-serif;
 }
 
 .content {
@@ -8,19 +9,57 @@ body {
   height: 100%;
 }
 
-.content div:first-child {
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: url(landscape_photography.jpg);
   min-height: 300px;
   background-size: cover;
   padding-top: 70px;
 }
 
+#home p,
+h1 {
+  max-width: 60%;
+  text-align: center;
+  margin: 2px;
+  color: rgba(255, 255, 255, 0.98);
+  text-shadow: 1px 1px 1px black;
+}
+
 .content div:nth-child(2n + 1) {
   background-color: beige;
 }
 
-.content div {
+.content > div {
   padding: 30px;
+}
+
+.boxes {
+  display: flex;
+  overflow-x: auto;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  max-width: 300px;
+  min-width: 250px;
+  max-height: 200px;
+  padding: 5px;
+}
+
+.box img,
+.box p {
+  max-width: 50%;
+  object-fit: cover;
+  margin: 0 5px;
+}
+
+.box p {
+  overflow: hidden;
 }
 
 nav {
@@ -37,4 +76,9 @@ nav a {
   text-transform: uppercase;
   text-decoration: none;
   align-self: center;
+}
+
+.logo {
+  color: white;
+  font-size: 2em;
 }

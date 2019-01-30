@@ -87,9 +87,13 @@ ul {
 }
 
 .boxes {
-  display: flex;
   overflow-x: auto;
-  justify-content: center;
+  text-align: center;
+}
+
+.boxes > div {
+  display: inline-flex;
+  text-align: left;
 }
 
 .box {

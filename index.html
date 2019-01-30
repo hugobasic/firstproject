@@ -10,13 +10,15 @@
 </head>
 
 <body>
-  <nav>
-    <a><i class="fab fa-asymmetrik logo"></i> </a> <a href="#home">Home</a>
-    <a href="#about">About</a> <a href="#contact">Contact</a>
-    <a href="#store">Store</a>
-  </nav>
-  <div class="content">
-    <div id="home">
+  <header>
+    <nav>
+      <a><i class="fab fa-asymmetrik logo"></i> </a> <a href="#home">Home</a>
+      <a href="#about">About</a> <a href="#contact">Contact</a>
+      <a href="#store">Store</a>
+    </nav>
+  </header>
+  <main class="content">
+    <div class="home" id="home">
       <h1>The Main Headline</h1>
       <p>
         And some explanatory text to encourage further investigation of the
@@ -31,48 +33,60 @@
       </p>
       <button type="button">Fantastic</button>
     </div>
-    <div class="boxes">
-      <div class="box">
-        <img
-          src="http://lorempixel.com/400/201/nature"
-          alt="Picture of something"
-        />
-        <p>
-          Lorem ipsum dolor sit amet, melius evertitur quo ea, eam et errem
-          contentiones. ipsum dolor sit amet, melius evertitur quo ea, eam et
-          errem contentiones.
-        </p>
-      </div>
-      <div class="box">
-        <img
-          src="http://lorempixel.com/400/200/nature"
-          alt="Picture of something"
-        />
-        <p>
-          Lorem ipsum dolor sit amet, melius evertitur quo ea, eam et errem
-          contentiones. ipsum dolor sit amet, melius evertitur quo ea, eam et
-          errem contentiones.
-        </p>
-      </div>
-      <div class="box">
-        <img
-          src="http://lorempixel.com/400/202/nature"
-          alt="Picture of something"
-        />
-        <p>
-          Lorem ipsum dolor sit amet, melius evertitur quo ea, eam et errem
-          contentiones. ipsum dolor sit amet, melius evertitur quo ea, eam et
-          errem contentiones.
-        </p>
+    <div>
+      <div class="boxes">
+        <div>
+          <div class="box">
+            <img
+              src="http://lorempixel.com/400/201/nature"
+              alt="Picture of something"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, melius evertitur quo ea, eam et errem
+              contentiones. ipsum dolor sit amet, melius evertitur quo ea, eam
+              et errem contentiones.
+            </p>
+          </div>
+          <div class="box">
+            <img
+              src="http://lorempixel.com/400/200/nature"
+              alt="Picture of something"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, melius evertitur quo ea, eam et errem
+              contentiones. ipsum dolor sit amet, melius evertitur quo ea, eam
+              et errem contentiones.
+            </p>
+          </div>
+          <div class="box">
+            <img
+              src="http://lorempixel.com/400/202/nature"
+              alt="Picture of something"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, melius evertitur quo ea, eam et errem
+              contentiones. ipsum dolor sit amet, melius evertitur quo ea, eam
+              et errem contentiones.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="form">
       <h4>Sign up for spam</h4>
       <form>
-        <input type="text" name="name" id="name" placeholder="Full Name" />
-        <input type="text" name="email" id="email" placeholder="Email" />
-        <input type="text" name="phone" id="phone" placeholder="Phone Number" />
+        <label for="name">Full Name</label>
+        <input type="text" name="name" id="name" placeholder="jan banan" />
+        <label for="email">Email</label>
+        <input
+          type="password"
+          name="email"
+          id="email"
+          placeholder="contact@example.com"
+        />
+        <label for="phone">Phone Number</label>
+        <input type="text" name="phone" id="phone" placeholder="07661122334" />
         <button
           type="button"
           onclick="window.location='https://upload.wikimedia.org/wikipedia/commons/0/09/Spam_can.png'"
@@ -81,31 +95,31 @@
         </button>
       </form>
     </div>
-    <footer id="contact">
-      <i class="fas fa-map-marker-alt"></i>
-      <div class="office1">
-        <ul>
-          <li>England</li>
-          <li>London</li>
-          <li>52 Somestreet</li>
-        </ul>
-      </div>
-      <i class="fas fa-phone"></i>
-      <div class="office2">
-        <ul>
-          <li>Company Name</li>
-          <li>Phone number</li>
-          <li>Email address</li>
-        </ul>
-      </div>
-      <i class="fas fa-clock"></i>
-      <div class="contactinfo">
-        <ul>
-          <li>Weekdays: 09:00 - 17:00</li>
-          <li>Saturdays: 10:00 - 14:00</li>
-          <li>Sundays: Closed</li>
-        </ul>
-      </div>
-    </footer>
-  </div>
+  </main>
+  <footer id="contact">
+    <i class="fas fa-map-marker-alt"></i>
+    <div class="office1">
+      <ul>
+        <li>Scotland</li>
+        <li>London</li>
+        <li>52 Somestreet</li>
+      </ul>
+    </div>
+    <i class="fas fa-phone"></i>
+    <div class="office2">
+      <ul>
+        <li>Company Name</li>
+        <li>Phone number</li>
+        <li>Email address</li>
+      </ul>
+    </div>
+    <i class="fas fa-clock"></i>
+    <div class="contactinfo">
+      <ul>
+        <li>Weekdays: 09:00 - 17:00</li>
+        <li>Saturdays: 10:00 - 14:00</li>
+        <li>Sundays: Closed</li>
+      </ul>
+    </div>
+  </footer>
 </body>

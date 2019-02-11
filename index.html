@@ -70,13 +70,28 @@
     <div class="form">
       <h4>Sign up for spam</h4>
       <form>
-        <input type="text" name="name" id="name" placeholder="Full Name" />
-        <input type="text" name="email" id="email" placeholder="Email" />
-        <input type="text" name="phone" id="phone" placeholder="Phone Number" />
-        <button
-          type="button"
-          onclick="window.location='https://upload.wikimedia.org/wikipedia/commons/0/09/Spam_can.png'"
-        >
+        <input
+          class="formInput"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Full Name"
+        />
+        <input
+          class="formInput"
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Email"
+        />
+        <input
+          class="formInput"
+          type="text"
+          name="phone"
+          id="phone"
+          placeholder="Phone Number"
+        />
+        <button type="button" id="alertMessageButton">
           Submit
         </button>
       </form>
@@ -108,4 +123,8 @@
       </div>
     </footer>
   </div>
+  <script src="alert-message.js"></script>
 </body>
+
+<!-- Submit button redirect: -->
+<!-- onclick="window.location='https://upload.wikimedia.org/wikipedia/commons/0/09/Spam_can.png'" -->

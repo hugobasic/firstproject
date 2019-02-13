@@ -1,16 +1,15 @@
-const displayButton = document.getElementById('alertMessageButton')
-displayButton.addEventListener('click', displayMessage)
+;(function() {
+  const displayButton = document.getElementById('alertMessageButton')
+  displayButton.addEventListener('click', alertMessage)
 
-function displayMessage() {
-  window.alert(alertMessage())
-}
+  function alertMessage() {
+    let fullFormData = Array.from(document.querySelectorAll('.formInput'))
+    let inputInfoArr = fullFormData.map(extractString)
+    let alertString = inputInfoArr.join('\n')
+    window.alert(alertString)
+  }
 
-function alertMessage() {
-  let fullFormData = Array.from(document.querySelectorAll('.formInput'))
-  let inputInfoArr = fullFormData.map(extractString)
-  return inputInfoArr.join('\n')
-}
-
-function extractString(formObj) {
-  return `${formObj.name}: ${formObj.value}`
-}
+  function extractString(formObj) {
+    return `${formObj.placeholder}: ${formObj.value}`
+  }
+})()

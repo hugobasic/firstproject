@@ -1,6 +1,22 @@
 body {
   margin: 0;
   font-family: Roboto, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  flex: 0 0 auto;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+footer {
+  flex: 0 0 auto;
 }
 
 .content {
@@ -9,7 +25,7 @@ body {
   height: 100%;
 }
 
-#home {
+.home {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,7 +36,7 @@ body {
   padding-top: 70px;
 }
 
-#home p,
+.home p,
 h1 {
   max-width: 60%;
   text-align: center;
@@ -71,9 +87,13 @@ ul {
 }
 
 .boxes {
-  display: flex;
   overflow-x: auto;
-  justify-content: center;
+  text-align: center;
+}
+
+.boxes > div {
+  display: inline-flex;
+  text-align: left;
 }
 
 .box {
@@ -117,6 +137,7 @@ nav a {
   font-size: 2em;
   max-width: 20%;
   padding: 0 30px;
+  pointer-events: none;
 }
 
 .buttonpage {

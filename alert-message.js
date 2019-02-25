@@ -19,7 +19,6 @@
   }
 
   function extractString(formObj) {
-    console.log('working')
     return `${formObj.placeholder}: ${formObj.value}`
   }
 })()

@@ -1,12 +1,19 @@
 ;(function() {
-  const submitButton = document.getElementById('alertMessageButton')
   const alertMsg = document.querySelector('.alertMsg')
-  submitButton.addEventListener('click', showMessage)
 
-  function showMessage() {
+  const form = document.getElementById('form')
+  form.addEventListener('submit', showMessage)
+
+  function showMessage(event) {
+    event.preventDefault()
     if (alertMsg.getAttribute('id') === 'hidden') {
+      const alertBox = document.getElementById('alertBox')
+      const alertButton = alertBox.querySelector('button')
+      const alertTextbox = alertBox.querySelector('.alertTextbox')
+
       alertMsg.setAttribute('id', '')
-      document.querySelector('.alertTextbox').innerHTML = messageContent()
+      alertButton.focus()
+      alertTextbox.innerHTML = messageContent()
     } else {
       alertMsg.setAttribute('id', 'hidden')
     }

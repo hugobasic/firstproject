@@ -15,8 +15,8 @@
     <a href="#about">About</a> <a href="#contact">Contact</a>
     <a href="#store">Store</a>
   </nav>
-  <div class="content">
-    <div>
+  <main class="content">
+    <div id="alertBox">
       <div class="alertMsg" id="hidden">
         <div class="alertTextbox"></div>
         <button
@@ -79,7 +79,7 @@
     </div>
     <div class="form">
       <h4>Sign up for spam</h4>
-      <form>
+      <form id="form">
         <label for="name">Full Name</label>
         <input
           class="formInput"
@@ -104,7 +104,7 @@
           id="phone"
           placeholder="Phone Number"
         />
-        <button type="button" id="alertMessageButton">
+        <button id="alertMessageButton">
           Submit
         </button>
       </form>

@@ -19,5 +19,7 @@
         behavior: 'smooth'
       })
     })
+
+    return element
   })
 })()

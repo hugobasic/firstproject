@@ -21,10 +21,10 @@ class Home extends React.Component {
     const { date } = this.state
 
     return (
-      <React.Fragment>
+      <div id="home">
         <h1>{format(date, 'HH:mm:ss')}</h1>
         <p>{format(date, 'Do MMMM')}</p>
-      </React.Fragment>
+      </div>
     )
   }
 

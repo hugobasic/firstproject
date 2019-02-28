@@ -4,11 +4,11 @@ import Box from './Box'
 const arr = [1, 2, 3]
 
 const Boxes = () => (
-  <React.Fragment>
+  <div id="boxes" className="boxes">
     {arr.map(int => (
       <Box key={int} id={int} />
     ))}
-  </React.Fragment>
+  </div>
 )
 
 export default Boxes

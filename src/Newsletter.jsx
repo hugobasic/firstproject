@@ -15,11 +15,11 @@ class Newsletter extends React.Component {
     const { showAlert, values } = this.state
 
     return (
-      <React.Fragment>
+      <div id="formContainer" className="form">
         <h4>Sign up for spam</h4>
         <Form onSubmit={this.formSubmit} />
         {showAlert && <AlertBox values={values} />}
-      </React.Fragment>
+      </div>
     )
   }
 

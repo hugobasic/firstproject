@@ -2,7 +2,7 @@ import React from 'react'
 import Office from './Office'
 
 const Footer = () => (
-  <React.Fragment>
+  <footer id="contact">
     <Office
       iconName="map-marker-alt"
       className="office1"
@@ -22,7 +22,7 @@ const Footer = () => (
         'Sundays: Closed'
       ]}
     />
-  </React.Fragment>
+  </footer>
 )
 
 export default Footer
